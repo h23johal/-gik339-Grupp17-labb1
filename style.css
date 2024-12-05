@@ -1,0 +1,78 @@
+html{
+    background: linear-gradient(45deg, #9BAFD9, #5673AE, #103783);
+    height: 100vh; /* Såhär får man inte göra vi vet, sorry.. */
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.rutan {
+    padding: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: grey;
+    text-align: left;
+    width: 40em;
+    height: 25em;
+    border-radius: 10px;
+    border-color: black;
+}
+.textfield {
+    float: right;
+    width: 50%;
+}
+.checkbox {
+    float: right;
+    margin-right: 49%;
+}
+label {
+    margin: 10px;
+    padding: 5px;
+}
+button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+button {
+    margin-left: 50px;
+    display: inline;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    border: 1px solid #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+h1 {
+    color: #a8d2fd;;
+    height: 4em;
+    text-align: center;
+    text-justify: distribute;
+    margin-top: 2em;
+}
+
+#divBox {
+    width: 30em;
+    height: 10em;
+    margin: 20px auto;
+    background-color: #ddd;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
