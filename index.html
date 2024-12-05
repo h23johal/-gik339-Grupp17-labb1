@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grupp 17 lab1</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <h1>Grupp 17 Lab 1!</h1>
-      <div class="rutan">
-        <label>Färg</label>
-        <input
-          type="text"
-          id="color"
-          name="color"
-          class="textfield"
-        /><br /><br />
-        <label>Innehåll</label>
-        <input
-          type="text"
-          id="content"
-          name="content"
-          class="textfield"
-        /><br /><br />
-        <label>Stil på box</label>
-        <input
-          type="checkbox"
-          id="divStyle"
-          name="divStyle"
-          class="checkbox"
-        /><br />
-        <button id="removeKnapp" class="knapp" name="removeButton">
-          Ta bort div
-        </button>
-        <button id="addKnapp" class="knapp" name="addButton" disabled>
-          lägg till div
-        </button>
-        <div id="divBox" class="divBox"></div>
-      </div>
-    <script src="Script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupp 17 lab1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Grupp 17 Lab 1!</h1>
+  <div class="rutan">
+    <label>Färg</label>
+    <input type="text" id="color" name="color" class="textfield" /><br /><br />
+    <label>Innehåll</label>
+    <input type="text" id="content" name="content" class="textfield" /><br /><br />
+    <label>Stil på box</label>
+    <input type="checkbox" id="divStyle" name="divStyle" class="checkbox" /><br />
+    <button id="removeButton" name="removeButton">Ta bort div</button>
+    <button id="addButton" name="addButton" disabled>lägg till div</button>
+    <div id="divBox" class="divBox"></div>
+  </div>
+  <script src="Script.js"></script>
+</body>
+
 </html>

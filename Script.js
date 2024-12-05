@@ -1,6 +1,6 @@
 const checkbox = document.querySelector('#divStyle');
 const textFields = document.querySelectorAll('.textfield');
-const removeButton = document.getElementById('removeKnapp');
+const removeButton = document.getElementById('removeButton');
 const colorInput = document.getElementsByName('color')[0];
 const addButton = document.querySelector('[name="addButton"]');
 const divBox = document.getElementsByTagName('div')[1];
@@ -29,18 +29,18 @@ function toggleButtons() {
 }
 
 // Funktion som hanterar textinmatning från textfält
-function handleTextInput(event) {
+function handleTextInput(e) {
     // Loggar vilket element som skickade eventet
-    console.log("Event avsändare:", event.target);
+    console.log("Event avsändare:", e.target);
 
     // Hämtar 'name'-attributet från det textfält som utlöste eventet
-    const inputName = event.target.name;
+    const inputName = e.target.name;
     console.log("Name-attribut:", inputName);
 
     // Om 'name'-attributet är 'content' och 'divBox' har en förälder:
     if (inputName === 'content' && divBox.parentElement) {
         // Uppdatera innehållet i 'divBox' med textfältets värde
-        divBox.innerHTML = event.target.value;
+        divBox.innerHTML = e.target.value;
     }
 }
 
